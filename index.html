@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card Generator</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <ul class="filterBar">
+      <li>
+        <label>Include Banner?</label>
+        <select class="filterPicker" for="includeBannerOption">
+          <option value="">Pick "Yes" or "No"</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </li>
+      <li>
+        <label>Full Name</label>
+        <input class="filterPicker" for="fullName" type="text" />
+      </li>
+      <li>
+        <label>Social Media Position</label>
+        <select class="filterPicker" for="smPosition">
+          <option value="position-left">Left</option>
+          <option value="position-right">Right</option>
+        </select>
+      </li>
+      <li>
+        <label>Github</label>
+        <input class="picker" for="gitHub" type="text" />
+      </li>
+      <li>
+        <label>X</label>
+        <input class="picker" for="xTwitter" type="text" />
+      </li>
+      <li>
+        <label>LinkedIn</label>
+        <input class="picker" for="linkedIn" type="text" />
+      </li>
+      <li>
+        <label>Instagram</label>
+        <input class="picker" for="instagram" type="text" />
+      </li>
+      <li>
+        <label>Employment</label>
+        <select class="picker" for="employmentRole">
+          <option value="">Pick your Position</option>
+          <option value="Web Developer">Web Developer</option>
+          <option value="System Administrator">System Administrator</option>
+          <option value="Freelancer">Freelancer</option>
+        </select>
+      </li>
+      <li>
+        <label>City</label>
+        <select class="picker" for="city">
+          <option value="">Pick a City</option>
+          <option value="Miami">Miami</option>
+          <option value="Orlando">Orlando</option>
+          <option value="Jacksonville">Jacksonville</option>
+          <option value="Tampa">Tampa</option>
+        </select>
+      </li>
+      <li>
+        <label>County</label>
+        <select class="picker" for="county">
+          <option value="">Pick a County</option>
+          <option value="Miami-Dade">Miami-Dade</option>
+          <option value="Orange">Orange</option>
+          <option value="Duval">Duval</option>
+          <option value="Hillsborough">Hillsborough</option>
+        </select>
+      </li>
+    </ul>
+    <!---->
+    <div class="portfolioContainer">
+      <div class="container">
+        <div class="profilePictureAndBanner">
+          <img class="banner" />
+          <img class="profilePicture" />
+        </div>
+        <br>
+        <div class="bioContainer">
+        <h1>Full Name</h1>
+        <h2>Employment</h2>
+        <h3>City, County</h3>
+      </div>
+        <ul class="socialmediaIcons">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
