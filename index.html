@@ -7,46 +7,52 @@
     <title>Profile Card Generator</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
+
+  <!---->
   <body>
     <ul class="filterBar">
       <li>
         <label>Include Banner?</label>
-        <select class="filterPicker" for="includeBannerOption">
-          <option value="">Pick "Yes" or "No"</option>
+        <select id="selectBanner">
+          <!--<option value="undefined">Pick "Yes" or "No"</option>-->
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>
       </li>
       <li>
         <label>Full Name</label>
-        <input class="filterPicker" for="fullName" type="text" />
+        <input
+          id="fullNameTextInput"
+          type="text"
+          placeholder="Enter your Name"
+        />
       </li>
       <li>
-        <label>Social Media Position</label>
-        <select class="filterPicker" for="smPosition">
+        <label>Icons Position</label>
+        <select id="selectPosition">
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
         </select>
       </li>
       <li>
         <label>Github</label>
-        <input class="picker" for="gitHub" type="text" />
+        <input for="gitHub" type="text" />
       </li>
       <li>
         <label>X</label>
-        <input class="picker" for="xTwitter" type="text" />
+        <input for="xTwitter" type="text" />
       </li>
       <li>
         <label>LinkedIn</label>
-        <input class="picker" for="linkedIn" type="text" />
+        <input for="linkedIn" type="text" />
       </li>
       <li>
         <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
+        <input for="instagram" type="text" />
       </li>
       <li>
         <label>Employment</label>
-        <select class="picker" for="employmentRole">
+        <select for="employmentRole">
           <option value="">Pick your Position</option>
           <option value="Web Developer">Web Developer</option>
           <option value="System Administrator">System Administrator</option>
@@ -55,7 +61,7 @@
       </li>
       <li>
         <label>City</label>
-        <select class="picker" for="city">
+        <select for="city">
           <option value="">Pick a City</option>
           <option value="Miami">Miami</option>
           <option value="Orlando">Orlando</option>
@@ -65,7 +71,7 @@
       </li>
       <li>
         <label>County</label>
-        <select class="picker" for="county">
+        <select for="county">
           <option value="">Pick a County</option>
           <option value="Miami-Dade">Miami-Dade</option>
           <option value="Orange">Orange</option>
@@ -74,26 +80,27 @@
         </select>
       </li>
     </ul>
+
     <!---->
     <div class="portfolioContainer">
       <div class="iconBar"></div>
       <div class="container">
         <div class="profilePictureAndBanner">
-          <img class="banner" />
-          <img class="profilePicture" />
+          <img id="banner" />
+          <img id="profilePicture" />
         </div>
         <br />
         <div class="bioContainer">
-          <h1>Full Name</h1>
+          <h1 class="fullNameTextBox">Full Name</h1>
           <h2>Employment</h2>
           <h3>City, County</h3>
+          <ul class="socialmediaIcons">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
-        <ul class="socialmediaIcons">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </div>
   </body>
