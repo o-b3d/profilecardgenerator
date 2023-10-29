@@ -33,6 +33,26 @@ li {
   padding: 35px 10px;
 }
 
+.socialMediaIconsContainer {
+  list-style: none;
+  position: absolute;
+  padding: 10px;
+  margin-left: 505px;
+}
+
+.socialMediaIconsContainer > li {
+  display: block;
+}
+
+.socialMediaIcons {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+
 .profilePictureAndBanner {
   position: relative;
 }
@@ -61,14 +81,11 @@ li {
   box-shadow: 2px 5px 12px black;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
-h2 {
+h3, h4 {
   text-align: center;
-}
-
-h3 {
-  text-align: center;
+  margin: 7px;
 }

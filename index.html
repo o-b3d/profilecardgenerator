@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="main.js"></script>
+  <script src="script.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,7 +52,7 @@
       </li>
       <li>
         <label>Employment</label>
-        <select for="employmentRole">
+        <select id="selectEmployment" for="employmentRole">
           <option value="">Pick your Position</option>
           <option value="Web Developer">Web Developer</option>
           <option value="System Administrator">System Administrator</option>
@@ -61,8 +61,8 @@
       </li>
       <li>
         <label>City</label>
-        <select for="city">
-          <option value="">Pick a City</option>
+        <select id="selectCity" for="city">
+          <option value="">Pick your City</option>
           <option value="Miami">Miami</option>
           <option value="Orlando">Orlando</option>
           <option value="Jacksonville">Jacksonville</option>
@@ -71,8 +71,8 @@
       </li>
       <li>
         <label>County</label>
-        <select for="county">
-          <option value="">Pick a County</option>
+        <select id="selectCounty" for="county">
+          <option value="">Pick your County</option>
           <option value="Miami-Dade">Miami-Dade</option>
           <option value="Orange">Orange</option>
           <option value="Duval">Duval</option>
@@ -82,8 +82,43 @@
     </ul>
 
     <!---->
+    <span class="iconBar">
+      <ul class="socialMediaIconsContainer">
+        <li>
+          <img
+            class="socialMediaIcons"
+            id="githubLogo"
+            src="icons8-github.svg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socialMediaIcons"
+            id="xLogo"
+            src="icons8-twitterx.svg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socialMediaIcons"
+            id="linkedInLogo"
+            src="icons8-linkedin.svg"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="socialMediaIcons"
+            id="instagramLogo"
+            src="icons8-instagram.svg"
+            alt=""
+          />
+        </li>
+      </ul>
+    </span>
     <div class="portfolioContainer">
-      <div class="iconBar"></div>
       <div class="container">
         <div class="profilePictureAndBanner">
           <img id="banner" />
@@ -91,15 +126,10 @@
         </div>
         <br />
         <div class="bioContainer">
-          <h1 class="fullNameTextBox">Full Name</h1>
+          <h1>Full Name</h1>
           <h2>Employment</h2>
-          <h3>City, County</h3>
-          <ul class="socialmediaIcons">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <h3>City</h3>
+          <h4>County</h4>
         </div>
       </div>
     </div>
