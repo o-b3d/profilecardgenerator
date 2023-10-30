@@ -33,9 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const socialMediaIconsContainer = document.querySelector(".socialMediaIconsContainer");
 
     if (positionValue === "position-right") {
-      socialMediaIconsContainer.style.marginLeft = "1285px";
+      socialMediaIconsContainer.style.marginLeft = "1285px"; //this should be removed to avoid using margin
+      //this should be .style.right = "335px" and .style.left = "auto"
     } else {
-      socialMediaIconsContainer.style.marginLeft = "505px";
+      socialMediaIconsContainer.style.marginLeft = "505px"; //this should be removed to avoid using margin
+      //this should be a else if statement with .style.left = "335px" and .style.right = "auto"
     }
   });
 
