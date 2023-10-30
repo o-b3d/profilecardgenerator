@@ -36,19 +36,19 @@
       </li>
       <li>
         <label>Github</label>
-        <input for="gitHub" type="text" />
+        <input id="githubInput" type="text" />
       </li>
       <li>
         <label>X</label>
-        <input for="xTwitter" type="text" />
+        <input id="xInput" type="text" />
       </li>
       <li>
         <label>LinkedIn</label>
-        <input for="linkedIn" type="text" />
+        <input id="linkedinInput" type="text" />
       </li>
       <li>
         <label>Instagram</label>
-        <input for="instagram" type="text" />
+        <input id="instagramInput" type="text" />
       </li>
       <li>
         <label>Employment</label>
@@ -71,12 +71,12 @@
       </li>
       <li>
         <label>County</label>
-        <select id="selectCounty" for="county">
-          <option value="">Pick your County</option>
-          <option value="Miami-Dade">Miami-Dade</option>
-          <option value="Orange">Orange</option>
-          <option value="Duval">Duval</option>
-          <option value="Hillsborough">Hillsborough</option>
+        <select id="selectCounty">
+          <option value="">Pick your Corresponding County</option>
+          <option value="Miami-Dade County">Miami-Dade</option>
+          <option value="Orange County">Orange</option>
+          <option value="Duval County">Duval</option>
+          <option value="Hillsborough County">Hillsborough</option>
         </select>
       </li>
     </ul>
@@ -85,36 +85,44 @@
     <span class="iconBar">
       <ul class="socialMediaIconsContainer">
         <li>
-          <img
+          <a id="githubURL" href="https://github.com/" target="_blank">
+            <img
             class="socialMediaIcons"
             id="githubLogo"
             src="icons8-github.svg"
-            alt=""
-          />
+            alt="GitHub Logo"
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socialMediaIcons"
-            id="xLogo"
-            src="icons8-twitterx.svg"
-            alt=""
-          />
+          <a id="xURL" href="https://x.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="xLogo"
+              src="icons8-twitterx.svg"
+              alt="X or Twitter Logo"
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socialMediaIcons"
-            id="linkedInLogo"
-            src="icons8-linkedin.svg"
-            alt=""
-          />
+          <a id="linkedinURL" href="https://www.linkedin.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="linkedInLogo"
+              src="icons8-linkedin.svg"
+              alt="Linkedin Logo"
+            />
+          </a>
         </li>
         <li>
-          <img
-            class="socialMediaIcons"
-            id="instagramLogo"
-            src="icons8-instagram.svg"
-            alt=""
-          />
+          <a id="instagramURL" href="https://www.instagram.com/" target="_blank">
+            <img
+              class="socialMediaIcons"
+              id="instagramLogo"
+              src="icons8-instagram.svg"
+              alt="Instagram Logo"
+            />
+          </a>
         </li>
       </ul>
     </span>
